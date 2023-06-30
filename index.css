@@ -17,7 +17,7 @@ body{
     font-size: 12px;
 }
 .cuerpo-calculadora{ 
-    width: clamp(300px, 70%, 450px);/*minimo,preferido y maximo*/
+    width: clamp(300px, 90%, 500px);/*minimo,preferido y maximo*/
     height: clamp(65%, 70%, 75%);
     background-color: #141416;
     border-radius: 15px;
