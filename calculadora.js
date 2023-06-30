@@ -220,7 +220,7 @@ botonResultado.addEventListener("click", ()=>{
     if(suma===true){
         pantalla.innerHTML ="";
         pantalla2.innerHTML ="";
-        resultado = parseFloat(valor1) + parseFloat(valor2);
+        resultado = Number((parseFloat(valor1) + parseFloat(valor2)).toFixed(10));
         console.log(resultado);
         valor1=resultado;
         pantalla.innerHTML=valor1;
@@ -230,7 +230,7 @@ botonResultado.addEventListener("click", ()=>{
     }else if(resta ===true){
         pantalla.innerHTML ="";
         pantalla2.innerHTML ="";
-        resultado = parseFloat(valor1) - parseFloat(valor2);
+        resultado = Number((parseFloat(valor1) - parseFloat(valor2)).toFixed(10));
         console.log(resultado);
         valor1=resultado;
         pantalla.innerHTML=valor1;
@@ -240,7 +240,7 @@ botonResultado.addEventListener("click", ()=>{
     }else if(multiplicacion ===true){
         pantalla.innerHTML ="";
         pantalla2.innerHTML ="";
-        resultado = parseFloat(valor1) * parseFloat(valor2);
+        resultado = Number((parseFloat(valor1) * parseFloat(valor2)).toFixed(10));
         console.log(resultado);
         valor1=resultado;
         pantalla.innerHTML=valor1;
@@ -250,7 +250,7 @@ botonResultado.addEventListener("click", ()=>{
     }else if(division ===true){
         pantalla.innerHTML ="";
         pantalla2.innerHTML ="";
-        resultado = parseFloat(valor1) / parseFloat(valor2);
+        resultado = Number((parseFloat(valor1) / parseFloat(valor2)).toFixed(10));
         console.log(resultado);
         valor1=resultado;
         pantalla.innerHTML=valor1;
