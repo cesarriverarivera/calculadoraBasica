@@ -178,6 +178,8 @@ window.addEventListener('load', () => {
     btnSelected.style.color = "orangered";
     btnSelected.style.backgroundColor = "transparent";
     btnSelected.style.scale = "1.2";
+    btnMenu.style.backgroundColor = "transparent";
+    btnExchange.style.backgroundColor = "transparent";
 });
 
 btnSelected.addEventListener("click", ()=>{
@@ -185,10 +187,10 @@ btnSelected.addEventListener("click", ()=>{
     btnSelected.style.backgroundColor = "transparent";
     btnSelected.style.scale = "1.2";
     btnMenu.style.color = "";
-    btnMenu.style.backgroundColor = "";
+    btnMenu.style.backgroundColor = "transparent";
     btnMenu.style.scale = "";
     btnExchange.style.color = "";
-    btnExchange.style.backgroundColor = "";
+    btnExchange.style.backgroundColor = "transparent";
     btnExchange.style.scale = "";
 })
 
@@ -197,10 +199,10 @@ btnMenu.addEventListener("click", ()=>{
     btnMenu.style.backgroundColor = "transparent";
     btnMenu.style.scale = "1.2";
     btnSelected.style.color = "";
-    btnSelected.style.backgroundColor = "";
+    btnSelected.style.backgroundColor = "transparent";
     btnSelected.style.scale = "";
     btnExchange.style.color = "";
-    btnExchange.style.backgroundColor = "";
+    btnExchange.style.backgroundColor = "transparent";
     btnExchange.style.scale = "";
 })
 
@@ -209,10 +211,10 @@ btnExchange.addEventListener("click", ()=>{
     btnExchange.style.backgroundColor = "transparent";
     btnExchange.style.scale = "1.2";
     btnSelected.style.color = "";
-    btnSelected.style.backgroundColor = "";
+    btnSelected.style.backgroundColor = "transparent";
     btnSelected.style.scale = "";
     btnMenu.style.color = "";
-    btnMenu.style.backgroundColor = "";
+    btnMenu.style.backgroundColor = "transparent";
     btnMenu.style.scale = "";
 })
     

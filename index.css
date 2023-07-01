@@ -4,7 +4,7 @@ body{
     width: 100svw;
     align-items: center;
     justify-content: center;
-    background-color: #e0ddca;
+    background-color: #000000;
     
 } 
 .titulo{
@@ -19,9 +19,20 @@ body{
 .cuerpo-calculadora{ 
     width: clamp(300px, 90%, 500px);/*minimo,preferido y maximo*/
     height: clamp(65%, 70%, 75%);
-    background-color: #141416;
+    background: linear-gradient(45deg,black, black 40%, orangered 41%, black 40%);
+    background-size: 2000% 200%;
     border-radius: 15px;
     box-shadow: 2px 3px 10px 5px #252629;
+    animation: cambiar 10s ease-in infinite;
+}
+@keyframes cambiar {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+    
 }
 .pantalla{
     display: flex;
@@ -99,11 +110,11 @@ button{
     align-items: center;
     height: 85%;
     border-radius: 30%;
-    background-color:  #141416;
+    background-color:  #050505;
     border: none;
     font-size: 1.5rem;
     text-align: center;
-    box-shadow: 2px 3px 4px 2px rgba(160, 160, 160, 0.562);
+    box-shadow: 0px 0px 4px 1px rgba(212, 211, 211, 0.562);
     color: white;
 }
 .btn-doble{
@@ -118,7 +129,6 @@ button:hover{
 }
 .btn-adicional{
     box-shadow: none;
-    background-color:transparent;
     font-size: 1rem;
     border-radius: none;
 }
