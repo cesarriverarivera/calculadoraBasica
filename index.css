@@ -8,7 +8,7 @@ body{
     
 } 
 .titulo{
-    height: 1.5%;  
+    height: 3%;  
 }
 .titulo span{
     height: 100%;
@@ -85,17 +85,20 @@ body{
     font-size: 25px;
 }
 .linea-botones{
-    height: 14%;
+    height: 12%;
     display: flex;
+    margin-top: 5px;
     margin-bottom: 2px;
+}
+.botones-adicionales{
+    height: 5%;
 }
 button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:95%;
-    height: 90%;
-    border-radius: 50%;
+    height: 85%;
+    border-radius: 30%;
     background-color:  #141416;
     border: none;
     font-size: 1.5rem;
@@ -110,8 +113,14 @@ button{
     font-size: 2.5rem;
 }
 button:hover{
-    background-color: rgb(16, 26, 22);
+    background-color: rgb(37, 37, 37);
     scale: 1.05;
+}
+.btn-adicional{
+    box-shadow: none;
+    background-color:transparent;
+    font-size: 1rem;
+    border-radius: none;
 }
 
 @media screen and (max-height: 800px) {

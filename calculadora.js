@@ -3,6 +3,10 @@ const pantalla = document.querySelector("#screen");
 const pantalla2 = document.querySelector("#screen2");
 const botonNumero = document.querySelectorAll(".num");
 const elementos = document.querySelector('.imagen');
+const btnSelected = document.querySelector("#btn-selected");
+const btnMenu = document.querySelector("#btn-menu");
+const btnExchange = document.querySelector("#btn-exchange");
+console.log(btnSelected);
 console.log(botonNumero);
 
 let num0 = botonNumero[9].innerHTML;
@@ -163,7 +167,56 @@ botonBorrar.addEventListener("click", ()=>{
 borrarUnitario.addEventListener("click", ()=>{
     valor1 = valor1.slice(0, -1);
     console.log(valor1);
-    pantalla.innerHTML =valor1;
+    pantalla.innerHTML = valor1;
+    pantalla2.innerHTML = "";
     elementos.style.animation = '';
 })
+
+
+//AGREGAR COLOR AL ICONO DE CALCULADORA Y CAMBIAR AL HACER CLCIK
+window.addEventListener('load', () => {
+    btnSelected.style.color = "orangered";
+    btnSelected.style.backgroundColor = "transparent";
+    btnSelected.style.scale = "1.2";
+});
+
+btnSelected.addEventListener("click", ()=>{
+    btnSelected.style.color = "orangered";
+    btnSelected.style.backgroundColor = "transparent";
+    btnSelected.style.scale = "1.2";
+    btnMenu.style.color = "";
+    btnMenu.style.backgroundColor = "";
+    btnMenu.style.scale = "";
+    btnExchange.style.color = "";
+    btnExchange.style.backgroundColor = "";
+    btnExchange.style.scale = "";
+})
+
+btnMenu.addEventListener("click", ()=>{
+    btnMenu.style.color = "orangered";
+    btnMenu.style.backgroundColor = "transparent";
+    btnMenu.style.scale = "1.2";
+    btnSelected.style.color = "";
+    btnSelected.style.backgroundColor = "";
+    btnSelected.style.scale = "";
+    btnExchange.style.color = "";
+    btnExchange.style.backgroundColor = "";
+    btnExchange.style.scale = "";
+})
+
+btnExchange.addEventListener("click", ()=>{
+    btnExchange.style.color = "orangered";
+    btnExchange.style.backgroundColor = "transparent";
+    btnExchange.style.scale = "1.2";
+    btnSelected.style.color = "";
+    btnSelected.style.backgroundColor = "";
+    btnSelected.style.scale = "";
+    btnMenu.style.color = "";
+    btnMenu.style.backgroundColor = "";
+    btnMenu.style.scale = "";
+})
+    
+
+
+
 

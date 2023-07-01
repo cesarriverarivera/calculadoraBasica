@@ -8,15 +8,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- css puro-->
     <link rel="stylesheet" href="index.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="container cuerpo-calculadora">
         <div class="row titulo">
-            <span>Calculazorra</span>
+            <span>CalculaZorra</span>
         </div>
         
+        <!-- botones para funciones adicionales -->
+        <div class="row d-flex justify-content-center botones-adicionales mt-1">
+            <div class="col-2">
+                <button id="btn-selected" class="col-12 btn-adicional"><i class="bi bi-calculator"></i></button>
+            </div>
+            <div class="col-2">
+                <button id="btn-menu" class="col-12 btn-adicional"><i class="bi bi-menu-button"></i></button>
+            </div>
+            <div class="col-2">
+                <button id="btn-exchange" class="col-12 btn-adicional"><i class="bi bi-currency-exchange"></i></button>
+            </div>
+        </div>
+        
+
+        
         <!--pantalla de la calculadora-->
-        <div class="row pantalla mt-3 mb-3 mx-1">
+        <div class="row pantalla mt-1 mb-3 mx-1">
             <div class="col-12 pantalla1">
                 <img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhtXm0uE6HJ4L04bLJAj93f_F_B8OVsR2zGhiHK1Sgf2fOxLVt1G-na52cGdVAIo5NZI&usqp=CAU" alt="">
                 <p id="screen" class="col-12 pantalla-interior-operaciones mb-0"></p> 
@@ -27,7 +44,7 @@
         </div>
 
         <!--botones de la calculadora-->
-        <div class="row linea-botones">
+        <div class="row linea-botones mt-4">
             <div class="col-6">
                 <button id="borrar" class="col-12 btn-doble btn-grande">C</button>
             </div>
