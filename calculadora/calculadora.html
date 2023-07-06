@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- css puro-->
+    <link rel="stylesheet" href="calculadora.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container cuerpo-calculadora">
+        <div class="row titulo">
+            <span>CalculaZorra</span>
+        </div>
+        
+        <!-- botones para funciones adicionales -->
+        <div class="row d-flex justify-content-center botones-adicionales mt-1">
+            <div class="col-2">
+                <button id="btn-selected" class="col-12 btn-adicional"><i class="bi bi-calculator"></i></button>
+            </div>
+            <div class="col-2">
+                <button id="btn-menu" class="col-12 btn-adicional"><i class="bi bi-menu-button"></i></button>
+            </div>
+            <div class="col-2">
+                <button id="btn-exchange" class="col-12 btn-adicional"><i class="bi bi-currency-exchange"></i></button>
+            </div>
+        </div>
+        
+
+        
+        <!--pantalla de la calculadora-->
+        <div class="row pantalla mt-1 mb-3 mx-1">
+            <div class="col-12 pantalla1">
+                <img class="imagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhtXm0uE6HJ4L04bLJAj93f_F_B8OVsR2zGhiHK1Sgf2fOxLVt1G-na52cGdVAIo5NZI&usqp=CAU" alt="">
+                <p id="screen" class="col-12 pantalla-interior-operaciones mb-0"></p> 
+            </div>
+            <div class="col-12 pantalla1">
+                <p id="screen2" class="col-12 pantalla-interior-resultado mb-0"></p>
+            </div>
+        </div>
+
+        <!--botones de la calculadora-->
+        <div class="row linea-botones mt-4">
+            <div class="col-6">
+                <button id="borrar" class="col-12 btn-doble btn-grande btn-naranja">C</button>
+            </div>
+            <div class="col-3">
+                <button id="borrarUnitario" class="col-12 btn-grande btn-naranja">&larr;</button>
+            </div>
+            <div class="col-3">
+                <button id="division" class="col-12 operador btn-naranja">/</button>
+            </div>
+        </div>
+
+        <div class="row linea-botones">
+            <div class="col-3">
+                <button id="siete" class="col-12 num">7</button>
+            </div>
+            <div class="col-3">
+                <button id="ocho" class="col-12 num">8</button>
+            </div>
+            <div class="col-3">
+                <button id="nueve" class="col-12 num">9</button>
+            </div>
+            <div class="col-3">
+                <button id="multiplicacion" class="col-12 btn-naranja">x</button>
+            </div>
+        </div>
+
+        <div class="row linea-botones">
+            <div class="col-3">
+                <button id="cuatro" class="col-12 num">4</button>
+            </div>
+            <div class="col-3">
+                <button id="cinco" class="col-12 num">5</button>
+            </div>
+            <div class="col-3">
+                <button id="seis" class="col-12 num">6</button>
+            </div>
+            <div class="col-3">
+                <button id="resta" class="col-12 btn-naranja">-</button>
+            </div>
+        </div>
+
+        <div class="row linea-botones">
+            <div class="col-3">
+                <button value="1" id="uno" class="col-12 num">1</button>
+            </div>
+            <div class="col-3">
+                <button value="2" id="dos" class="col-12 num">2</button>
+            </div>
+            <div class="col-3">
+                <button id="tres" class="col-12 num">3</button>
+            </div>
+            <div class="col-3">
+                <button id="suma" value="3" class="col-12 btn-naranja">+</button>
+            </div>
+        </div>
+
+        <div class="row linea-botones ">
+            <div class="col-6">
+                <button id="cero" class="col-12 btn-doble btn-grande num">0</button>
+            </div>
+            <div class="col-3">
+                <button id="punto" class="col-12 num">.</button>
+            </div>
+            <div class="col-3">
+                <button id="resultado" class="col-12 btn-naranja">=</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
+</body>
+</html>

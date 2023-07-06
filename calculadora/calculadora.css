@@ -123,6 +123,9 @@ button{
 .btn-grande{
     font-size: 2.5rem;
 }
+.btn-naranja{
+    color: orangered;
+}
 button:hover{
     background-color: rgb(37, 37, 37);
     scale: 1.05;
